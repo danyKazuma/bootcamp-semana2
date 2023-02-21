@@ -10,6 +10,11 @@ public class Transaction extends PanacheMongoEntity {
     public LocalDate date;
     public tipoCliente type;
     public String description;
+    public String active;
+    public String name;
+    public String lastName;
+    public String nroDocument;
+    public String typeDocument;
 
     public Transaction(){}
     public String getAccount(){
@@ -41,5 +46,46 @@ public class Transaction extends PanacheMongoEntity {
     }
     public void setDate(LocalDate date){
         this.date=date;
+    }
+    public String getActive(){return active;}
+
+    public void setAccount(String account) {
+        this.account = account;
+    }
+
+    public void setActive(String active) {
+        this.active = active;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getNroDocument() {
+        return nroDocument;
+    }
+
+    public void setNroDocument(String nroDocument) {
+        this.nroDocument = nroDocument;
+    }
+
+    public String getTypeDocument() {
+        return typeDocument;
+    }
+
+    public void setTypeDocument(String typeDocument) {
+        this.typeDocument = typeDocument;
     }
 }

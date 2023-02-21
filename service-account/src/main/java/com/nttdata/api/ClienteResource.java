@@ -4,7 +4,8 @@ import com.nttdata.transaction.model.Client;
 import io.smallrye.mutiny.Multi;
 import io.smallrye.mutiny.Uni;
 import io.quarkus.mongodb.reactive.ReactiveMongoClient;
-import io.quarkus.mongodb.reactive.ReactiveMongoCollection;import javax.enterprise.context.ApplicationScoped;
+import io.quarkus.mongodb.reactive.ReactiveMongoCollection;
+import javax.enterprise.context.ApplicationScoped;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import org.bson.Document;
@@ -13,6 +14,7 @@ import java.time.LocalDate;
 @Path("/cliente")
 @ApplicationScoped
 public class ClienteResource {
+    /*
     private final ReactiveMongoClient reactiveMongoClient;
     public ClienteResource(ReactiveMongoClient reactiveMongoClient) {
         this.reactiveMongoClient = reactiveMongoClient;
@@ -50,5 +52,5 @@ public class ClienteResource {
         }).filter(customer->{
             return customer.getActive().equals("S");
         });
-    }
+    }¨*/
 }

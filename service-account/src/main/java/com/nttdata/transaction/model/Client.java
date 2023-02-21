@@ -18,9 +18,9 @@ public class Client extends PanacheEntity {
     @Column(length = 40,unique = true)
     public String name;
     private String lastName;
-    private Long nroDocument;
-    private int typeCustomer;
-    private int typeDocument;
+    private String nroDocument;
+    private String typeCustomer;
+    private String typeDocument;
     private String active;
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "dd-MM-yyyy")
     public LocalDate fechaDeVencimiento;
